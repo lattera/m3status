@@ -1,7 +1,10 @@
 sleeptime=1
 
-add_module battery
+interfaces=(re0 wlan0)
+
 add_module volume
+add_module inet
+add_module battery
 add_module loadavg
 add_module cputemp
 add_module mydate
