@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+# Copyright (c) 2015 Shawn Webb
+# License: 2-clause BSD
+
 mydir=$(dirname $(realpath ${0}))
 mymodules=()
 

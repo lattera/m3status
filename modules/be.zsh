@@ -1,3 +1,6 @@
+# Copyright (c) 2015 Shawn Webb
+# License: 2-clause BSD
+
 if [ -z "${activebe}" ]; then
 	# Ensure ${activebe} is set in global namespace
 	activebe=""

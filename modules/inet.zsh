@@ -1,3 +1,6 @@
+# Copyright (c) 2015 Shawn Webb
+# License: 2-clause BSD
+
 function inet() {
 	local j=0
 	foreach iface in ${interfaces}; do
