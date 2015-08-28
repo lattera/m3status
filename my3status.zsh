@@ -32,5 +32,5 @@ while true; do
 		fi
 	done
 	echo "]"
-	sleep 5
+	sleep ${sleeptime}
 done
