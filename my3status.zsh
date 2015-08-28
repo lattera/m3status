@@ -28,7 +28,7 @@ while true; do
 			fi
 
 			${module}
-			i=$((i+1))
+			i=$((${i}+1))
 		fi
 	done
 	echo "]"
