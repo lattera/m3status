@@ -16,7 +16,22 @@ if [ ! -f ${mydir}/config.zsh ]; then
 fi
 
 . ${mydir}/util.zsh
-. ${mydir}/config.zsh
+
+configfile=""
+while getopts 'c:' opt; do
+	case "${opt}" in
+		c)
+			configfile="${OPTARG}"
+			;;
+	esac
+done
+
+if [ -z ${configfile} ]; then
+	echo "USAGE: ${0} -c /path/to/config/file" >&2
+	exit 1
+fi
+
+. ${configfile}
 
 do_header
 while true; do
