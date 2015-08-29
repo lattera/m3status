@@ -11,10 +11,6 @@ if [ ! -d ${moduledir} ]; then
 	exit 1
 fi
 
-if [ ! -f ${mydir}/config.zsh ]; then
-	exit 1
-fi
-
 . ${mydir}/util.zsh
 
 configfile=""
@@ -28,6 +24,11 @@ done
 
 if [ -z ${configfile} ]; then
 	echo "USAGE: ${0} -c /path/to/config/file" >&2
+	exit 1
+fi
+
+if [ ! -f ${configfile} ]; then
+	echo "Could not find config file at ${configfile}" >&2
 	exit 1
 fi
 
