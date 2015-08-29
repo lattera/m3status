@@ -17,7 +17,7 @@ function bhyvevms() {
 	done
 
 	if [ -z ${vms} ]; then
-		vms="No VMs running"
+		vms="NONE"
 	fi
 
 	cat<<EOF
