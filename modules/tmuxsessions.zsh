@@ -11,7 +11,7 @@ function tmuxsessions() {
 	done
 
 	if [ -z ${sessions} ]; then
-		sessionse="NONE"
+		sessions="NONE"
 	fi
 
 	cat<<EOF
