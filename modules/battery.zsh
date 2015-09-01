@@ -6,6 +6,8 @@ function FreeBSD_battery_status() {
 
     if [ ${charging} -eq 0 ]; then
         charging="Power"
+    elif [ ${charging} -eq 2 ]; then
+        carging="Charging"
     else
         charging="Battery"
     fi
@@ -25,7 +27,7 @@ function FreeBSD_battery_life() {
     {
         "name": "battery",
         "full_text": "Battery: ${life}%"
-    },
+    }
 EOF
 }
 
