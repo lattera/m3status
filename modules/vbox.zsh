@@ -10,6 +10,10 @@ function vbox() {
         boxen="${boxen}${vm}"
     done
 
+    if [ -z ${boxen} ]; then
+        boxen="NONE"
+    fi
+
     cat <<EOF
     {
         "name": "VBox_VMs",
