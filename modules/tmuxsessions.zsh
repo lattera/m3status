@@ -17,7 +17,7 @@ function tmuxsessions() {
 	cat<<EOF
 		{
 			"name": "tmux_sessions",
-			"full_text": "tmux sessions: ${sessions}"
+			"full_text": "tmux: ${sessions}"
 		}
 EOF
 }
