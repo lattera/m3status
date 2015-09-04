@@ -23,7 +23,7 @@ function bhyvevms() {
 	cat<<EOF
 		{
 			"name": "Bhyve_VMs",
-			"full_text": "Running bhyve VMs: ${vms}"
+			"full_text": "bhyve: ${vms}"
 		}
 EOF
 }
